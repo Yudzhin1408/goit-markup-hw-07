@@ -1,0 +1,18 @@
+.footer-social {
+  margin-left: 70px;
+
+  &__text {
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__link {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &__svg {
+    fill: #ffffff;
+  }
+}

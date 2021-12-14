@@ -1,4 +1,4 @@
-@import './utils/vars';
+@import './utils/variables';
 @import './base/reset';
 @import './base/common';
 @import './componets/modal';
@@ -12,9 +12,12 @@
 @import './layout/features';
 @import './layout/work';
 @import 'layout/team';
+@import './componets/social';
 @import 'layout/client';
 
 @import './componets/btn';
 @import './layout/portfolio';
 
 @import './layout/footer';
+@import './layout/footer-social';
+@import './layout/online';

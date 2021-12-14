@@ -1,3 +1,35 @@
+.btn-list {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.btn-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border: none;
+
+  padding: 6px 22px;
+  border-radius: 4px;
+  background: #f5f4fa;
+  transition: color var(--time) var(--cubic-bezier),
+    background-color var(--time) var(--cubic-bezier), box-shadow var(--time) var(--cubic-bezier);
+}
+.button:hover,
+.button:focus {
+  color: var(--btn-acent-color);
+  background: #188ce8;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -7,11 +39,11 @@
 .portfolio-item {
   margin: 15px;
   transition: box-shadow var(--time) var(--cubic-bezier);
-  &:hover,
-  &:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
+}
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-box {
@@ -34,10 +66,8 @@
   transform: translateY(100%);
   transition: transform var(--time) var(--cubic-bezier);
 }
-.portfolio-link:hover {
-  .portfolio-text {
-    transform: translateY(0);
-  }
+.portfolio-link:hover .portfolio-text {
+  transform: translateY(0);
 }
 
 .items-title {
